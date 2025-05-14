@@ -3,7 +3,8 @@ import axios from 'axios';
 import Todo from './components/Todo';
 import TodoForm from './components/TodoForm';
 
-const API_URL = 'http://localhost:5000/api/todos';
+const API_URL = `${process.env.REACT_APP_API_URL}/api/todos`;
+
 
 function App() {
   const [todos, setTodos] = useState([]);
